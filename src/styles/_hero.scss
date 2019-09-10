@@ -4,4 +4,10 @@ div.top-hero {
   background-repeat: no-repeat;
   max-height: 1060px;
   color: white;
+
+  .heroIconsBar {
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    margin-top: 50px;
+    padding: 50px;
+  }
 }
