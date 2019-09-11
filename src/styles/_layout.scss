@@ -1,7 +1,7 @@
 div.main {
   min-height: 100vh;
   padding-bottom: 60px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
 div.full-height {
@@ -12,6 +12,10 @@ a.link-no-style {
   &:hover {
     text-decoration: none;
   }
+}
+
+.grayBg {
+  background-color: $charcoal-grey;
 }
 
 .footer-col {
