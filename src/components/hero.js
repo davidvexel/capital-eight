@@ -17,7 +17,7 @@ export default class Hero extends Component {
       >
         <Container className="text-center">
           <Row>
-            <Col style={{ padding: 30, marginTop: 200 }}>
+            <Col style={{ padding: 30, marginTop: 150 }}>
               <img src={logoCenter} alt="Logo Home" />
             </Col>
           </Row>
