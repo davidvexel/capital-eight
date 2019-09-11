@@ -6,10 +6,11 @@ import Hero from "../components/hero"
 import CallToActionThree from "../components/callToActionThree"
 import CtaTextLeft from "../components/ctaTextLeft"
 import CtaTextRight from "../components/ctaTextRight"
-import HeroText from "../components/heroText";
+import HeroText from "../components/heroText"
 
 import philosophyImage from "../images/imagen-philosophy.jpg"
-import createdImage from "../images/imagen-created.jpg";
+import createdImage from "../images/imagen-created.jpg"
+import Quote from "../components/quote"
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
@@ -51,7 +52,8 @@ const IndexPage = () => (
       }}
       image={createdImage}
     />
-    <HeroText/>
+    <HeroText />
+    <Quote />
   </Layout>
 )
 

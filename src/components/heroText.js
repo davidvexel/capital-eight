@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Row, Col, Container, Button } from "react-bootstrap"
+import { Row, Col, Button } from "react-bootstrap"
 import heroBg from "../images/hero2.jpg"
 
 export default class HeroText extends Component {
