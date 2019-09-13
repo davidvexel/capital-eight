@@ -1,40 +1,40 @@
 import React from "react"
 import { Link } from "gatsby"
+import logo from "../images/logo.png"
 
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap"
+import { Navbar, Nav, Container } from "react-bootstrap"
 
 const CustomNavbar = ({ pageInfo }) => {
-  console.log(pageInfo)
   return (
     <>
-      <Navbar variant="dark" expand="lg" id="site-navbar">
-        {/* <Container> */}
-        <Link to="/" className="link-no-style">
-          <Navbar.Brand as="span">Gatsby React Bootstrap</Navbar.Brand>
-        </Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}>
-            <Link to="/page-2" className="link-no-style">
-              <Nav.Link as="span" eventKey="page-2">
-                Page 2
-              </Nav.Link>
-            </Link>
-          </Nav>
-          <Nav className="ml-auto">
-            <Form inline onSubmit={e => e.preventDefault()}>
-              <Form.Group>
-                <FormControl
-                  type="text"
-                  placeholder="Fake Search"
-                  className="mr-2"
-                />
-              </Form.Group>
-              <Button>Fake Button</Button>
-            </Form>
-          </Nav>
-        </Navbar.Collapse>
-        {/* </Container> */}
+      <Navbar
+        variant="dark"
+        expand="lg"
+        id="site-navbar"
+        style={{ padding: 15 }}
+      >
+        <Container>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}>
+              <Link to="/about" className="link-no-style">
+                <Nav.Link as="span" eventKey="about">
+                  About Us
+                </Nav.Link>
+              </Link>
+              <Link to="/contact" className="link-no-style">
+                <Nav.Link as="span" eventKey="contact">
+                  Contact us
+                </Nav.Link>
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+          <Link to="/" className="link-no-style">
+            <Navbar.Brand as="span">
+              <img style={{ height: 40 }} alt="Capital Eight" src={logo} />
+            </Navbar.Brand>
+          </Link>
+        </Container>
       </Navbar>
     </>
   )

@@ -4,7 +4,7 @@ import { Row, Col } from "react-bootstrap"
 export default class Quote extends Component {
   render() {
     return (
-      <div className="grayBg quoteContainer">
+      <div className="pinkGrayBg quoteContainer">
         <Row>
           <div style={{ margin: "200px 180px", textAlign: "center" }}>
             <Col>

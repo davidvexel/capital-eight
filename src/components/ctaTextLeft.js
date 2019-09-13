@@ -12,7 +12,7 @@ const CtaTextLeft = ({ cssClassName, text, image }) => (
         </Container>
       </Col>
       <Col md={6}>
-        <img className="fullWidthImg" src={image} />
+        <img className="fullWidthImg" alt="" src={image} />
       </Col>
     </Row>
   </div>
