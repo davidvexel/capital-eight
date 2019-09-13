@@ -1,6 +1,7 @@
 import React from "react"
 import { Row, Col, Container } from "react-bootstrap"
 import PropTypes from "prop-types"
+import { Parallax } from "react-parallax"
 
 const CtaTextLeft = ({ cssClassName, text, image }) => (
   <div className={cssClassName}>
@@ -12,7 +13,15 @@ const CtaTextLeft = ({ cssClassName, text, image }) => (
         </Container>
       </Col>
       <Col md={6}>
-        <img className="fullWidthImg" alt="" src={image} />
+        <Parallax
+          blur={0}
+          bgImage={image}
+          bgImageAlt="Capital Eight"
+          strength={200}
+          className="fullWidthImg"
+        >
+          <div style={{ height: 600 }} />
+        </Parallax>
       </Col>
     </Row>
   </div>
