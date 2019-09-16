@@ -16,7 +16,7 @@ export default class HeroText extends Component {
         <div>
           <Row>
             <div style={{ margin: "300px 50px" }}>
-              <Col md={6}>
+              <Col md={{ span: 6, offset: 6 }} className="text-right">
                 <p>
                   <b>Capital Eight’s</b> vision is to pioneer a new generation
                   of investment firms adapted to the reality of a fast evolving

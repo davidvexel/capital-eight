@@ -4,18 +4,16 @@ import { Row, Col } from "react-bootstrap"
 export default class Quote extends Component {
   render() {
     return (
-      <div className="pinkGrayBg quoteContainer">
-        <Row>
-          <div style={{ margin: "200px 180px", textAlign: "center" }}>
-            <Col>
-              <p className="quoteText">
-                The market will favor firms that embrace the technological wave
-                to be able to navigate through a new market structure.
-              </p>
-            </Col>
+      <Row noGutters className="pinkGrayBg quoteContainer">
+        <Col className="quote-col">
+          <div className="quote text-center">
+            <p>
+              The market will favor firms that embrace the technological wave to
+              be able to navigate through a new market structure.
+            </p>
           </div>
-        </Row>
-      </div>
+        </Col>
+      </Row>
     )
   }
 }

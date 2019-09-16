@@ -1,8 +1,23 @@
-div.quoteContainer {
+.quoteContainer {
   text-align: center;
+  height: 600px;
 }
-p.quoteText {
-  font-size: 42px;
-  color: $charcoal-grey;
-  font-family: "TimesNewRomanPSMT"
+.quote-col {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  justify-content: center;
+  width: 100%;
+
+  .quote {
+    width: 70%
+  }
+
+  p {
+    font-size: 42px;
+    color: $charcoal-grey;
+    font-family: "TimesNewRomanPSMT";
+  }
 }
