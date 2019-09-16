@@ -22,26 +22,28 @@ a.link-no-style {
   background-color: $very-light-pink;
 }
 
-.footer-col {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  footer {
-    display: flex;
-    position: relative;
-    bottom: 0;
-    margin-top: -60px;
-    height: 60px;
-    clear: both;
-    background-color: $color-primary;
-    color: white;
-    justify-content: center;
-    width: 100%;
+.footer {
+  bottom: 0;
+  margin-top: -60px;
+  height: 360px;
+  clear: both;
+  background-color: $color-primary;
+  color: white;
+  width: 100%;
+  padding: 60px 75px;
 
-    span {
-      align-self: center;
-      text-align: center;
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid white;
+    margin: 60px 0;
+  }
+  .footer-menu {
+    a {
+      color: white;
+      margin: 0 10px;
+      font-family: "Raleway";
     }
   }
 }
