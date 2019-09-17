@@ -8,7 +8,7 @@ import Founders from "../components/founders"
 import ParallaxQuote from "../components/parallaxQuote"
 
 const AboutPage = () => (
-  <Layout pageInfo={{ pageName: "index" }}>
+  <Layout pageInfo={{ pageName: "about" }}>
     <SEO title="About Us" keywords={[`about`, `about us`, `us`]} />
     <AboutHero />
     <AboutUSCta />

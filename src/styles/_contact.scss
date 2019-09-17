@@ -1,0 +1,20 @@
+.contactDetails {
+  @extend .grayBg;
+  padding: 110px;
+  color: white;
+
+  hr {
+    display: block;
+    height: 5px;
+    border: 0;
+    border-top: 5px solid white;
+    margin: 50px 0;
+    width: 120px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+  }
+}
