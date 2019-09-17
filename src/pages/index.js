@@ -13,7 +13,7 @@ import Quote from "../components/quote"
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
-    <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
+    <SEO title="Home" keywords={[`capital eight`, `capital`]} />
     <Hero />
 
     <CtaTextLeft

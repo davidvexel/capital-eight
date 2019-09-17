@@ -10,7 +10,7 @@ import SEO from "../components/seo"
 
 const AboutPage = () => (
   <Layout pageInfo={{ pageName: "contact" }}>
-    <SEO title="About Us" keywords={[`contact`, `contact us`, `mail`]} />
+    <SEO title="Contact" keywords={[`contact`, `contact us`, `mail`]} />
     <Parallax
       className="contact-parallax"
       blur={0}
